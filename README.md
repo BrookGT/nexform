@@ -29,12 +29,8 @@ Typical uses:
 
 ```bash
 export SRC=$PWD
-export WORK=/tmp/nxf-build
-export OUT=/tmp/nxf-out
-export CXX=clang++
-export CXXFLAGS="-fsanitize=address -g"
-export LIB_FUZZING_ENGINE="-fsanitize=fuzzer,address"
-mkdir -p $WORK $OUT
+cargo check --workspace --offline
+# ClusterFuzzLite (Linux):
 bash .clusterfuzzlite/build.sh
 ```
 
