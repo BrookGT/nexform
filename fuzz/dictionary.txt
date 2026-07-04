@@ -1,0 +1,11 @@
+"\x4E\x58\x46\x31"
+"NXF1"
+section_count=
+metadata
+payload
+xref
+recoverable
+deferred
+compressed
+polymorphic
+graph

@@ -1,0 +1,17 @@
+
+[package]
+name = "nexform-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "NXF (Nexus Exchange Format) document bundle parser and validator."
+readme = "../README.md"
+
+[lib]
+name = "nexform_core"
+path = "src/lib.rs"
+
+[features]
+default = ["std"]
+std = []

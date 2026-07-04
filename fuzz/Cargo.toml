@@ -1,0 +1,34 @@
+
+[package]
+name = "nexform-fuzz"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+nexform-core = { path = "../nexform-core" }
+
+            [[bin]]
+            name = "parser_fuzzer"
+            path = "fuzz_targets/parser_fuzzer.rs"
+            test = false
+            doc = false
+            bench = false
+            
+            [[bin]]
+            name = "decoder_fuzzer"
+            path = "fuzz_targets/decoder_fuzzer.rs"
+            test = false
+            doc = false
+            bench = false
+            
+            [[bin]]
+            name = "state_machine_fuzzer"
+            path = "fuzz_targets/state_machine_fuzzer.rs"
+            test = false
+            doc = false
+            bench = false
